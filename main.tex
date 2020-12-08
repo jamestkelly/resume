@@ -1,50 +1,39 @@
-%%%%%%%%%%%%%%%%%
-% This is an sample CV template created using altacv.cls
-% (v1.1.4, 27 July 2018) written by LianTze Lim (liantze@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
-% 
-%% It may be distributed and/or modified under the
-%% conditions of the LaTeX Project Public License, either version 1.3
-%% of this license or (at your option) any later version.
-%% The latest version of this license is in
-%%    http://www.latex-project.org/lppl.txt
-%% and version 1.3 or later is part of all distributions of LaTeX
-%% version 2003/12/01 or later.
-%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a CV for Jim Tran Kelly based on the sample CV template created using altacv.cls (v1.1.4, 27 July, 2018) as written by LianTze Lim (liantze@gmail.com). This has been last updated by Jim Kelly, 8 December, 2020.
+% This document may be distributed and or modified under the conditions of the LaTeX Project Public License, either version 1.3. The latest version of this license is available at http://www.latex-project.org/lppl.txt, and version 1.3 or later is considered a part of all distributions of LaTeX version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% If you need to pass whatever options to xcolor
+% Command to pass options to 'xcolor'.
 \PassOptionsToPackage{dvipsnames}{xcolor}
 
-%% If you are using \orcid or academicons
-%% icons, make sure you have the academicons 
-%% option here, and compile with XeLaTeX
-%% or LuaLaTeX.
+% If using \orcid or 'academicons', please ensure to enable the 'academicons' command here and then compile with XeLaTeX or LuaLaTeX;
 % \documentclass[10pt,a4paper,academicons]{altacv}
-
-%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% Note: Use the 'normalphoto' option if wanting to use a photo of standard dimensions rather than cropped to fit within a circle, i.e. the following command.
 % \documentclass[10pt,a4paper,normalphoto]{altacv}
 
-\documentclass[10pt,a4paper]{altacv}
-%% AltaCV uses the fontawesome and academicon fonts
-%% and packages. 
-%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
-%% 
-%% Compile with LuaLaTeX for best results. If you
-%% want to use XeLaTeX, you may need to install
-%% Academicons.ttf in your operating system's font 
-%% folder.
+\documentclass[10pt, a4paper]{altacv}
+% AltaCV uses the 'fontawesome' and 'academicon' fonts and packages. For more information view:
+% texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for a full list of symbols. For best results compile this document with LuaLaTeX. If wishing to compile this document with XeLaTeX, it is necessary to install Academicons.ttf in the given operating system's font folder.
 
+% Define page layout
+\geometry
+	{
+	left = 1cm,
+	right = 9cm,
+	marginparwidth = 6.8cm,
+	marginparsep = 1.2cm,
+	top = 1.25cm,
+	bottom = 1.25cm,
+	footskip = 2\baselineskip
+	}
 
-% Change the page layout if you need to
-\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
-
-% Change the font if you want to.
-
-% If using pdflatex:
+% Options for using pdflatex
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[default]{lato}
+\usepackage{setspace}
 
-% If using xelatex or lualatex:
+% If using XeLaTeX or LuaLaTeX then uncomment the following command
 % \setmainfont{Lato}
 
 % Define colour options for document
@@ -66,15 +55,18 @@
 \usepackage[colorlinks]{hyperref}
 
 \begin{document}
+    \singlespacing
     \name{Jim Tran Kelly}
     \tagline{Undergraduate Software Engineer}
     \personalinfo{
-    % It must be noted that not all of these fields are necessary and it is possible to change & edit the sections through the following example command.
+    % It must be noted that not all of these fields are necessary and it is possible to change & edit the sections 
+    % through the following example command.
     % \printinfo{symbol}{detail}
-    % Additionally, the 'academicons' option must be added to the \documentclass and then compiled with LuaLaTeX or XeLaTeX; if wanting to use \orcid or other 'academicons' commands.
+    % Additionally, the 'academicons' option must be added to the \documentclass and then compiled with LuaLaTeX 
+    % or XeLaTeX; if wanting to use \orcid or other 'academicons' commands.
         \email{jimkelly.t@outlook.com}
         \phone{+61412561162}
-        \homepage{jameskellyt.github.io}
+        %\homepage{jamestkelly.github.io}
         %\twitter{@twitterhandle}
         \linkedin{www.linkedin.com/in/jimkellyt}
         \github{https://github.com/jamestkelly}
@@ -83,39 +75,40 @@
     \begin{fullwidth}
     \makecvheader
     \end{fullwidth}
-    % Note: For personal preference if wanting to make the font sizes of itemize environments smaller, it is possible to use the following example command.
+    % Note: For personal preference if wanting to make the font sizes of itemize environments smaller, it is possible to 
+    % use the following example command.
     % \AtBeginEnvironment{itemize}{\small}
     \cvsection[page1sidebar]{Experience}
-    \cvevent{Software Engineer}{Mr Cooper}{June 2018 -- Present}{Chennai}
+    % Enter experience fields
+    	\cvevent{FutureNet}{Undergraduate Software Engineer}{November, 2020 -- Present}{West End, Brisbane}
         \begin{itemize}
-            \item Automate process to reduce the resolution time from 3 days to 3 seconds. 
-            \item Developed new Microservice with over 90\% code coverage on sonarqube .  
-            \item Created React component using TDD.
-            \item Implemented Azure Search To increase the search efficiency by 300\%.
-            \item Integrated Azure Service Bus for Failure Tolerance.
-            \item Created common utility in gradle and npm repo.
-            \end{itemize}
-            \divider
-            \cvevent{Software Engineer - Intern}{Mr Cooper}{Sep 2017 -- June 2018}{Chennai}
-            \begin{itemize}
-            \item Automate The Letter Generation Process using Mail Merge. 
-            \item Created Common Component using React which is used across the project.  
-            \item Optimised the code to increase the efficiency of the webapp. 
-            \item Worked on the Drools for calculation of date.  
-            \item Used Azure Blob for persisting documents.
+            \item Assisted with the development of a desktop and mobile application in React Native for Windows, MacOS, Android, and iOS systems.
         \end{itemize}
-    \divider
-    \cvevent{Internship}{UvSofts}{June 2017}{Chennai}
+        \divider
+        \cvevent{Woolly Mammoth Alehouse}{Bartender}{Dec 2019 -- Mar 2020}{Fortitude Valley, Brisbane}
+        \cvevent{}{Senior Bartender}{Jul 2018 -- Jan 2019}{}
+        \cvevent{}{Floor Attendant (Glassy)}{Nov 2017 -- Jul 2018}{}
         \begin{itemize}
-            \item Developed Website using Word Press.
+            \item Started at the Woolly Mammoth as a glassy and was promoted from glassy to a bar attendant and subsequently a supervisor position after demonstrating competence leading a team; returned to the Woolly Mammoth Alehouse during the Summer holidays after a sustained break to focus on my studies.
         \end{itemize}
-    \divider
-    \cvevent{Internship}{SRM University}{May 2017}{Chennai}
+    	\divider
+    	\cvevent{Ric's Bar}{Bartender}{Mar 2017 -- Nov 2017}{Fortitude Valley, Brisbane}
+	\cvevent{}{Floor Attendant (Glassy)}{Nov 2016 -- Mar 2017}{}
         \begin{itemize}
-            \item Worked on the Elab Tool to provide eLearning to SRM Student . 
+            \item Developed keen attention to detail and efficiency in the workplace. Promoted from glassy to bartender after demonstrating competence behind the bar and leading a small team in a fast paced environment.
+        \end{itemize}
+    	\divider
+    	\cvevent{Food \& Beverage Attendant}{The Morrison Hotel}{Feb 2016 -- Jul 2016}{Woolloongabba, Brisbane}
+        \begin{itemize}
+            \item Gained experience working as a waiter and bartender handling cash, working the till and
+providing customer service in a small team.
         \end{itemize}
     \cvsection{Education}
-    \cvevent{B.Tech in Computer Science}{SRM University}{2014 -- 2018}{}
-    \cvevent{Senior Secondary}{CBSE Board}{2014}{}
+    	\cvevent{Bachelor of Information Technology (Computer Science)}{Queensland University of Technology}{2018 -- Ongoing}{}
+	\begin{itemize}
+		\item Expected completion date: November 2021
+		\item Coursework in Intelligent Systems (Artificial Intelligence) and Cyber Security
+		\item Current Grade Point Average (GPA): 6.33 / 7.0
+		\item Transitioned \& transferred units from a Bachelor of Electrical Engineering (Honours) to Bachelor of Information Technology (Computer Science) because I felt as though I would gain more satisfaction from a career in software engineering.
     \medskip
 \end{document}
