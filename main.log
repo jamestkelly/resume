@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.24)  28 MAR 2021 18:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.24)  28 MAR 2021 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1361,17 +1361,12 @@ LaTeX Font Info:    Font shape `T1/lato-TLF/bx/n' in size <17.28> not available
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 8.
-
-./page1sidebar.tex:14: Undefined control sequence.
-l.14 	\ctag
-           {Java}
-? s
-OK, entering \scrollmode...
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
 (Font)              scaled to size 9.0pt on input line 35.
 LaTeX Font Info:    Try loading font information for OMS+lato-TLF on input line
  35.
 LaTeX Font Info:    No file OMSlato-TLF.fd. on input line 35.
+
 
 LaTeX Font Warning: Font shape `OMS/lato-TLF/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
@@ -1416,8 +1411,7 @@ sr/local/texlive/2019/texmf-dist/fonts/enc/dvips/fontawesome/fontawesomeone.enc
 .pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pf
 b></usr/local/texlive/2019/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pf
 b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-
-Output written on main.pdf (1 page, 127494 bytes).
+Output written on main.pdf (1 page, 127571 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  29 compressed objects within 1 object stream
