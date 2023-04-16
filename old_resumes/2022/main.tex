@@ -1,0 +1,112 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a CV for Jim Tran Kelly based on the sample CV template created using altacv.cls (v1.1.4, 27 July, 2018) as written by LianTze Lim (liantze@gmail.com). This has been last updated by Jim Kelly, 8 December, 2020.
+% This document may be distributed and or modified under the conditions of the LaTeX Project Public License, either version 1.3. The latest version of this license is available at http://www.latex-project.org/lppl.txt, and version 1.3 or later is considered a part of all distributions of LaTeX version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Command to pass options to 'xcolor'.
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+% If using \orcid or 'academicons', please ensure to enable the 'academicons' command here and then compile with XeLaTeX or LuaLaTeX;
+% \documentclass[10pt,a4paper,academicons]{altacv}
+% Note: Use the 'normalphoto' option if wanting to use a photo of standard dimensions rather than cropped to fit within a circle, i.e. the following command.
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt, a4paper]{altacv}
+% AltaCV uses the 'fontawesome' and 'academicon' fonts and packages. For more information view:
+% texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for a full list of symbols. For best results compile this document with LuaLaTeX. If wishing to compile this document with XeLaTeX, it is necessary to install Academicons.ttf in the given operating system's font folder.
+
+% Define page layout
+\geometry
+	{
+	left = 1cm,
+	right = 9cm,
+	marginparwidth = 6.8cm,
+	marginparsep = 1.2cm,
+	top = 1.25cm,
+	bottom = 1.25cm,
+	footskip = 2\baselineskip
+	}
+
+% Options for using pdflatex
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{setspace}
+
+% If using XeLaTeX or LuaLaTeX then uncomment the following command
+% \setmainfont{Lato}
+
+% Define colour options for document
+\definecolor{Navy}{HTML}{000080}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Navy}
+\colorlet{accent}{Navy}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Define bullets for itemize and rating marker for \cvskill
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+% The file, 'sample.bib' is used to store any publications.
+\addbibresource{sample.bib}
+
+\usepackage[colorlinks]{hyperref}
+
+\begin{document}
+    \singlespacing
+    \name{Jim Tran Kelly}
+    \tagline{Full-Stack Developer \& Recent Graduate}
+    \personalinfo{
+    % It must be noted that not all of these fields are necessary and it is possible to change & edit the sections 
+    % through the following example command.
+    % \printinfo{symbol}{detail}
+    % Additionally, the 'academicons' option must be added to the \documentclass and then compiled with LuaLaTeX 
+    % or XeLaTeX; if wanting to use \orcid or other 'academicons' commands.
+        \email{jimkelly.t@outlook.com}
+        \phone{+61412561162}
+        \homepage{http://jim-t-kelly.web.app}
+        %\twitter{@twitterhandle}
+        \linkedin{www.linkedin.com/in/jimkellyt}
+        \github{https://github.com/jamestkelly}
+    }
+    % Extend the header to the full width of page.
+    \begin{fullwidth}
+    \makecvheader
+    \end{fullwidth}
+    % Note: For personal preference if wanting to make the font sizes of itemize environments smaller, it is possible to
+    % use the following example command.
+    % \AtBeginEnvironment{itemize}{\small}
+    \cvsection[page1sidebar]{Experience}
+    % Enter experience fields
+        \cvevent{Deloitte}{Graduate Analyst}{March, 2022 -- Present}{CBD, Melbourne}
+    	\begin{itemize}
+    		\item Worked with clients to enable them to disrupt industries before industries disrupt them. Built and designed business solutions that are powered by modern technology platforms that run on premise, in the cloud, or a hybrid of both.
+    	\end{itemize}
+    	\cvevent{Digital Purpose}{Full-Stack Developer}{March, 2021 -- March, 2022}{West End, Brisbane}
+	\begin{itemize}
+		\item Worked directly with clients and non-technical staff developing tech stacks for web applications, predominantly in Angular TypeScript.
+		\item Developed front-end through direct collaboration with design team \& clients. Primarily implementing designs with HTML, CSS, \& THREE.js.
+		\item Developed back-end infrastructure using primarily Google Cloud Platform \& Firebase.
+	\end{itemize}
+    	\cvevent{FutureNet}{Undergraduate Software Engineer}{November, 2020 -- March, 2021}{West End, Brisbane}
+        \begin{itemize}
+        	   \item Worked with an international software development team developing predominantly with TypeScript \& JavaScript.
+            \item Set up work environments and built progressive web applications for use on desktop and mobile operating systems.
+       \end{itemize}
+        \cvevent{Woolly Mammoth Alehouse}{Bartender}{Dec 2019 -- Mar 2020}{Fortitude Valley, Brisbane}
+        \cvevent{}{Senior Bartender}{Jul 2018 -- Dec 2018}{}
+        \cvevent{}{Floor Attendant (Glassy)}{Nov 2017 -- Jul 2018}{}
+    \cvsection{Education}
+    	\cvevent{Bachelor of Information Technology (Computer Science)}{Queensland University of Technology}{Feb 2018 -- Nov 2021}{}
+	\begin{itemize}
+		\item Graduated with distinction.
+		\item Majored in Computer Science with minors in Electrical Engineering \& Artificial Intelligence.
+		\item Grade Point Average (GPA): 6.45 / 7.0
+		\item Transitioned \& transferred units from a Bachelor of Electrical Engineering (Honours) to Bachelor of Information Technology (Computer Science).
+	\end{itemize}
+    \medskip
+    \par\noindent\rule{\textwidth}{0.4pt}
+    References provided upon request.
+\end{document}
