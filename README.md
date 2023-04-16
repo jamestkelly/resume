@@ -24,7 +24,7 @@
     <a href="https://github.com/jamestkelly/resume"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jamestkelly/resume">View Demo</a>
+    <a href="https://github.com/jamestkelly/resume/blob/main/main.pdf">View My Resume</a>
     ·
     <a href="https://github.com/jamestkelly/resume/issues">Report Bug</a>
     ·
@@ -63,6 +63,8 @@ This resume is my iteration as adapted from standard LaTeX resumes available on 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
+
+My curriculum vitae (CV) can be viewed under the `main.pdf` file at the root of the repository. As hosted [here](https://github.com/jamestkelly/resume/blob/main/main.pdf) on GitHub.
 
 For personal recreation or development upon this document it is possible to upload the project to an online LaTeX editing suite, i.e. [Overleaf](www.overleaf.com) or download a TeX document editing suite from the internet. The `*.pdf` files are viewed as any other `*.pdf` can be viewed on a given operating system (OS).
 
