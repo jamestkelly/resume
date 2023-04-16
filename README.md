@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/jamestkelly/resume">
-    <img src="images/resume_icon.png" alt="Logo" width="80" height="80">
+    <img src="img/resume_icon.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Resume</h3>
