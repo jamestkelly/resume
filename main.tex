@@ -1,97 +1,70 @@
-\documentclass{resume} % Use the custom resume.cls style
-
-\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
-
+\documentclass{resume}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Jim Tran Kelly} % Your name
-% You can merge both of these into a single line, if you do not have a website.
-\address{+61 412 561 162 \\ Melbourne, VIC} 
-\address{\href{mailto:jimkelly.t@outlook.com}{jimkelly.t@outlook.com} \\ \href{https://www.linkedin.com/in/jimkellyt/}{LinkedIn} \\ \href{https://jim-t-kelly.web.app}{https://jim-t-kelly.web.app}} %
+
+\name{Jim Tran Kelly}
+\address{+61 412 561 162 \\ Brisbane, QLD \\ \href{mailto:jimkelly.t@outlook.com}{jimkelly.t@outlook.com}} 
+\address{\href{https://github.com/jamestkelly}{github.com/jamestkelly} \\ \href{https://www.linkedin.com/in/jimkellyt/}{linkedin.com/in/jimkellyt} \\ \href{https://jim-t-kelly.web.app}{jim-t-kelly.web.app}} %
 
 \begin{document}
+   % Skills
+   \begin{rSection}{Skills}
+      \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+         Languages & JavaScript/TypeScript, Golang, HTML/CSS, Python, SQL, C/C++, C\#, Bash\\
+         Technologies & Docker, NodeJS, MS SQL, PostgreSQL, Linux, Git, Figma, AWS, GCP\\
+         Frameworks \& Libraries & ReactJS, NestJS, AngularJS, gRPC, Tailwind CSS, ThreeJS, D3\\
+      \end{tabular}\\
+   \end{rSection}
 
-% Education
-\begin{rSection}{Education}
+   % Experience
+   \begin{rSection}{EXPERIENCE}
+      \textbf{Deloitte}\\
+      Consultant, Full-Stack Developer (Illuminate) \hfill \textit{Brisbane}, AU \textbar\space Jun 2023 - Present
+      \begin{itemize}
+         \item Designed and developed microservices based architecture for servicing of data-mart operations.
+         \item Developed both traditional REST APIs and gRPC streams for real-time data analytics functionality.
+      \end{itemize}
+      Graduate, Full-Stack Developer (Illuminate) \hfill \textit{Melbourne}, AU \textbar\space Nov 2022 - Jun 2023
+      \begin{itemize}
+         \item Optimised performance bottlenecks in data processing jobs via implementation of hierarchical scheduling.
+         \item Extended the functionality and scope of supplier risk related data analytics tools.
+      \end{itemize}
+      Graduate, Integration Developer (Bureau of Meteorology) \hfill \textit{Melbourne}, AU \textbar\space Mar 2022 - Nov 2022
+      \begin{itemize}
+         \item Primary developer for the build and release of tranche one for the managed file transfer solution.
+         \item Collaborated directly with government and internal stakeholders to implement a modernised solution for the secure management and transit of sensistive data.
+      \end{itemize}
+      
+      \textbf{Digital Purpose}\\
+      Full-Stack Developer \hfill \textit{Brisbane}, AU \textbar\space Mar 2021 - Mar 2022
+      \begin{itemize}
+         \item Developed boutique web applications utilising ThreeJS for 3D rendered visual effects.
+         \item Implemented tailored technical solutions for web applications to suit individual client needs.
+      \end{itemize}
+      
+      \textbf{Future Net POS Solutions}
+      Undergraduate Software Engineer \hfill \textit{Brisbane}, AU \textbar\space Nov 2020 - Mar 2021
+      \begin{itemize}
+         \item Developed a progressive web application serving a point-of-sale solution.
+         \item Worked collaboratively to integrate and implement modernisations to existing legacy systems.
+      \end{itemize}
+   \end{rSection} 
 
-{\bf Bachelor of Information Technology (Computer Science)}, Queensland University of Technology\hfill {2020 - 2021}\\
-Grade Point Average (GPA): 6.48 / 7.0\\
-Transferred from a Bachelor (Honours) of Electrical Engineering (2018 - 2019) to Computer Science. Graduated with distinction.
+   % Projects
+   \begin{rSection}{PROJECTS}
+      \begin{itemize}
+         \item \href{https://jim-t-kelly.web.app/}{Portfolio Website} \textbar\space \href{https://github.com/jamestkelly/personal-portfolio}{GitHub} - Developed my personal portfolio website using TypeScript, Firebase, ThreeJS, React, and Tailwind CSS.
+         \item \href{https://github.com/jamestkelly/is-my-coffee-cold}{Is My Coffee Cold? (GitHub)} - A progressive-web-application that approximates how long you have in a given location before your coffee goes cold.
+         \item \href{https://github.com/jamestkelly/K8s-PySpark-Matrix}{K8s PySpark Matrix (GitHub)} - A proof of concept executing PySpark jobs abstracted behind a standard REST API.
+      \end{itemize}
+   \end{rSection} 
 
-\end{rSection}
-
-% Skills
-\begin{rSection}{Skills}
-
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Languages & JavaScript, TypeScript, Golang, HTML, CSS, Python, SQL, Java, C, C++, C\#, Bash, Kotlin\\
- & MATLAB, LaTeX\\
-Technologies & Docker, NodeJS, MS SQL, PostgreSQL, Linux, Git, Figma, AWS, GCP, Firebase, Kibana\\
-& Ionic, Red Hat OpenShift\\
-Frameworks & ReactJS, React-Native, NestJS, AngularJS, gRPC, Camel, Fuse, Tailwind CSS, Sass\
-\end{tabular}\\
-\end{rSection}
-
-\begin{rSection}{EXPERIENCE}
-
-\textbf{Full-Stack Developer - Graduate} \hfill Nov 2022 - Present\\
-Deloitte | Illuminate \hfill \textit{Melbourne, VIC}
- \begin{itemize}
-    \itemsep -3pt {} 
-    \item Developed a modern web application based supply chain solution using a variety of technologies including TypeScript, Docker, NestJS, Go, Ansible, BullMQ, Redis, SQL, and gRPC.
-    \item Built, integrated, and released scalable RESTful APIs connected to data-processing back-end systems.
-    \item Analysed and optimised performance bottlenecks in existing back-end data-processing jobs through the implementation of scheduler and worker queues; leading to an average speedup of 2.19 times faster data processing times via concurrency.
-    \item Led the development of an integrated Wikidata solution in Go to enable further data enrichment for the application and enhance its functionality.
-    \item Created informative and effective documentation, reports, and general comments on all code created.
-    \item Demonstrated a strong sense of autonomy and initiative in delivering high-quality software features, troubleshooting complex technical issues, and collaborating with cross-functional teams within an Agile framework, resulting in the successful delivery of the project and positive feedback from stakeholders.
- \end{itemize}
- 
-\textbf{Integration Developer - Graduate} \hfill May 2022 - Nov 2022\\
-Deloitte | Core Business Operations \hfill \textit{Melbourne, VIC}
- \begin{itemize}
-    \itemsep -3pt {} 
-    \item Led the implementation of a Managed File Transfer (MFT) solution and collaborated directly with government clients and stakeholders to build features and resolve issues.
-    \item Utilised technologies such as Python, Ansible, GitLab, ElastAlert, Kotlin, Camel, Red Hat OpenShift, and Axway Secure Transport in developing and maintaining the solution across all deployed environments.
-    \item Was the primary for and successfully oversaw the go-live release of the MFT solution for a major government client, ensuring a seamless transition with minimal downtime in operation.
-    \item Demonstrated strong project management and engineering principles to ensure sustainable delivery of the solution.
- \end{itemize}
-
- \textbf{Graduate} \hfill Mar 2022 - May 2022\\
-Deloitte | Core Business Operations \hfill \textit{Melbourne, VIC}
- \begin{itemize}
-    \itemsep -3pt {} 
-    \item Joined Deloitte, Core Business Operations as a Graduate in Consulting. Completed on-boarding and training primarily focused as a Platform \& Integration engineer.
- \end{itemize}
-
-\newpage
-
-\textbf{Full-Stack Developer} \hfill Mar 2021 - Mar 2022\\
-Digital Purpose \hfill \textit{Brisbane, QLD}
- \begin{itemize}
-    \itemsep -3pt {} 
-    \item Designed, developed, and released web applications for a boutique firm using AngularJS, TypeScript, ThreeJS, and GCP / Firebase.
-    \item Constructed APIs and wider tailored technical solutions for web applications to meet client needs.
- \end{itemize}
-
-\textbf{Undergraduate Software Engineer} \hfill Nov 2020 - Mar 2021\\
-FutureNet POS \hfill \textit{Brisbane, QLD}
- \begin{itemize}
-    \itemsep -3pt {} 
-    \item Developed a modern point-of-sale (POS) web application using TypeScript, ElectronJS, and IonicJS to replace legacy systems, resulting in improved transaction efficiency, stock-taking, and customer satisfaction.
-    \item Utilised Azure cloud computing \& hosting to streamline the application lifecycle.
- \end{itemize}
-
-\end{rSection} 
-
-% Projects
-\begin{rSection}{PROJECTS}
-\vspace{-1.25em}
-\item {I have several projects hosted on GitHub that showcase my dedication to continuously improving my skills as a software engineer, which you can access from my page \href{https://github.com/jamestkelly}{here}. The following are a few of my personal favorites.}
-\item \textbf{\href{https://github.com/jamestkelly/personal-portfolio}{Personal Portfolio Website}} {| Designed, programmed, and deployed my own \href{https://jim-t-kelly.web.app}{personal portfolio website} using Figma, Firebase, TypeScript, ThreeJS, React, and Tailwind CSS.}
-\item \textbf{\href{https://github.com/jamestkelly/decider}{Decider}} {| This is my most recent project and a work in progress. It is an application I've designed, and developed as a progressive-web-application for coming to a consensus on decisions, complaints and suggestions sharing, and random selection. This application is designed to use a Golang back-end with Firebase Hosting \& Realtime Database alongside Google Cloud Platform, and a React TypeScript front-end with Ionic for mobile application development.}
-\item \textbf{\href{https://github.com/jamestkelly/is-my-coffee-cold}{Is My Coffee Cold?}} {| Designed and built a progressive-web-application (PWA) for mobile and desktop using TypeScript, Ionic Capacitor, and Angular. It utilises the WeatherAPI alongside Newton's Rate of Cooling to determine approximately how long you have in any given location before your fresh coffee will go cold.}
-\item \textbf{\href{https://github.com/jamestkelly/harold}{Harold}} {| Developed features and am the lead for the Harold chatbot for the \#under30s Deloitte CBO Slack channel. Harold runs as a NodeJS Lambda which is triggered on a Cron Schedule. He uses the groups.info Slack API to retrieve a list of user's for a channel and then sends a question to the channel via a web-hook. The chatbot will ask a randomly selected question to a random user in the channel. This chatbot was built with NodeJS, JavaScript, Severless, and AWS.}
-
-\end{rSection} 
+   % Education
+   \begin{rSection}{Education}
+      {\bf Bachelor of Information Technology (Computer Science)}, Queensland University of Technology\hfill {2020 - 2021}\\
+      GPA: 6.48 / 7.0, \textit{Dean's List Award}: 3 Semesters\\
+      Transferred from a Bachelor (Honours) of Electrical Engineering (2018 - 2019) to Computer Science.
+   \end{rSection}
 
 \end{document}
