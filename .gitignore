@@ -2,3 +2,11 @@
 .DS_Store
 .vscode
 .idea
+
+# Build files
+*.aux
+*.fdb_latexmk
+*.log
+*.synctex*
+*.fls
+*.out
